@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Service from "./components/Service/Service";
+import Agency from "./components/Agency/Agency";
 
 function App() {
   return (
@@ -11,24 +12,10 @@ function App() {
         <Header />
         <About />
         <Service />
+        <Agency />
         
         
         
-        <div class="agency" id="agency">
-            <div class="white-overlay">
-                <div class="container">
-                    <div>
-                        <img src="imgs/airplane.png" />
-                        <div>
-                            <img src="imgs/pic1.png" />
-                            <h2 class="text-center text-uppercase">Enjoy <br /> All <br /> World</h2>
-                        </div>
-                        <img src="imgs/airplane.png" />
-                    </div>
-                    <p class="text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look likeIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as o</p>
-                </div>
-            </div>
-        </div>
         
         <div class="statistics text-capitalize text-center font-weight-bold">
             <div class="container">
