@@ -1,3 +1,5 @@
+import { Route, Switch } from 'react-router-dom';
+
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -10,8 +12,8 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
-       
-        <Navigation />
+      <Switch>
+        <Route path='/' component={Navigation} />
         <Header />
         <About />
         <Service />
@@ -19,6 +21,7 @@ function App() {
         <Statistics />
         <Contacts />
         <Footer />
+      </Switch>
     </div>
   );
 }
