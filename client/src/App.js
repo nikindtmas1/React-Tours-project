@@ -12,16 +12,16 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
+        <Navigation />
       <Switch>
-        <Route path='/' component={Navigation} />
-        <Header />
-        <About />
-        <Service />
-        <Agency />
-        <Statistics />
-        <Contacts />
-        <Footer />
+        <Route path='/home' component={Header} />
+        <Route path='/about' component={About} />
+        <Route path='/service' component={Service} />
+        <Route path='/agency' component={Agency} />
+        <Route path='/contact' component={Contacts} />
+        <Route path='/statistic' component={Statistics} />
       </Switch>
+        {/* <Footer /> */}
     </div>
   );
 }
