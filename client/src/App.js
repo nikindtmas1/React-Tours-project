@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 
+
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -13,15 +14,17 @@ function App() {
   return (
     <div>
         <Navigation />
-      <Switch>
-        <Route path='/' exact component={Header} />
-        <Route path='/home' component={Header} />
-        <Route path='/about' component={About} />
-        <Route path='/service' component={Service} />
-        <Route path='/agency' component={Agency} />
-        <Route path='/contact' component={Contacts} />
-        <Route path='/statistic' component={Statistics} />
-      </Switch>
+       
+          <Switch>
+              <Route exact path="/"><Header /></Route>
+              <Route path="/home"><Header/></Route>
+              <Route path="/about"><About /></Route>
+              <Route path="/service"><Service /></Route>
+              <Route path="/agency"><Agency /></Route>
+              <Route path="/contact"><Contacts /></Route>
+              <Route path="/statistic"><Statistics /></Route>
+        </Switch>
+     
         <Footer />
     </div>
   );

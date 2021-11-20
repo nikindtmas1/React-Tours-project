@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Header = () => {
 
     return (
@@ -7,7 +9,7 @@ const Header = () => {
                 <div>
                     <h1><span>Amazing</span><br />Santorini 10 Days Tour</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
-                    <button><a href="#" className="text-uppercase">book now</a></button>
+                    <button><Link to="/" className="text-uppercase">book now</Link></button>
                 </div>
             </div>
         </div>

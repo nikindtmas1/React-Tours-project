@@ -1,11 +1,11 @@
-
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light text-capitalize">
         <div className="container">
-            <a className="navbar-brand" href="/"><img src="imgs/logo.png" alt="#" /></a>
+            <Link className="navbar-brand" to="/home"><img src="imgs/logo.png" alt="#" /></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -13,36 +13,36 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="show-menu">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="/home">Home <span className="sr-only">(current)</span></a>
+                        <Link  to="/home" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/about">about</a>
+                        <Link  to="/about" className="nav-link">about</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/service">Service</a>
+                        <Link className="nav-link" to="/service">Service</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/agency">travel agency</a>
+                        <Link className="nav-link" to="/agency">travel agency</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/contact">contact us</a>
+                        <Link className="nav-link" to="/contact">contact us</Link>
                     </li>
                     <li className="nav-item .search-container">
-                        <a className="nav-link search" href="#"><i className="fas fa-search"></i></a>
+                        <Link className="nav-link search" to="#"><i className="fas fa-search"></i></Link>
                         <form>
                             <input type="search" />
                         </form>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="far fa-user"></i></a>
+                        <Link className="nav-link" to="#"><i className="far fa-user"></i></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="far fa-heart"></i></a>
+                        <Link className="nav-link" to="#"><i className="far fa-heart"></i></Link>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+        </nav>
     );
 };
 
