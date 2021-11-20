@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Service from "./components/Service/Service";
 import Agency from "./components/Agency/Agency";
 import Statistics from "./components/Statistics/Statistics";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -15,27 +16,12 @@ function App() {
         <Service />
         <Agency />
         <Statistics />
+        <Contacts />
         
         
         
         
         
-        <div class="contact" id="contact">
-            <div class="violet-overlay">
-                <div class="container">
-                    <h2 class="text-center">Get in touch</h2>
-                    <div class="contact-form">
-                        <form>
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <input type="text" placeholder="Phone" />
-                            <textarea placeholder="Message"></textarea>
-                            <input type="submit" value="SEND" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         
         <footer>
             <div class="container">
