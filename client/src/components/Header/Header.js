@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-
     return (
         <header id="home">
         <div className="overlay">
